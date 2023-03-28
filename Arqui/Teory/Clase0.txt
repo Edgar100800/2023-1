@@ -1,0 +1,7 @@
+Existen tres prioridades al momento de diseñar un circuito logico:
+    - Jerarquia
+        Evaluar que tipo de sistemas en modulos y la prioridad de estos en nuestro diseño
+    - Modularidad
+        Que cada modulo tenga una funcion en especifico y que esta pueda tener una conexion con los otros modulos
+    - Regularidad
+        Evaluar cuan regular es un modulo para poder reutilizarlos
