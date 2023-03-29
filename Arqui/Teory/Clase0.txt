@@ -5,3 +5,5 @@ Existen tres prioridades al momento de diseñar un circuito logico:
         Que cada modulo tenga una funcion en especifico y que esta pueda tener una conexion con los otros modulos
     - Regularidad
         Evaluar cuan regular es un modulo para poder reutilizarlos
+
+    

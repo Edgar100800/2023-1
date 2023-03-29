@@ -1,0 +1,31 @@
+Introduction to the Theory of Computing 18.404/6.840 discussed computability theory, which researched the limitations and capabilities of algorithms and computation.
+
+Introduction to Theory of Computing 18.404/6.840 : The course focuses on computability theory and complexity theory
+Prerequisites include a good understanding of mathematical theorems and proofs
+
+Computational theory is necessary for a deeper understanding of computation : Theory has not been explored enough, and is necessary for practical applications
+Finite automatons are an example of an abstract model that captures important aspects of computation
+
+A finite automaton consists of five components. : Q is a finite set of states.
+Sigma is a finite set of symbols representing the alphabet.
+Delta is a function describing the transition of states.
+Q0 is the starting state.
+F is the set of accepting states.
+
+Regular languages can be recognized by a finite automaton. : An automaton accepts an input string if it follows a defined sequence of states.
+A machine can recognize many strings, but always recognizes only one language.
+
+Regular languages can be solved with finite automata : Regular languages are recognized by finite automata
+Some languages, like those with equal number of 0s and 1s, cannot be recognized by finite automata
+
+Regular expressions and finite automata are equivalent in power with respect to the class of languages they describe : Regular expressions are formed from atomic elements and the regular operations of union, concatenation, and star
+Finite automata use states and transitions to recognize regular languages
+
+Regular languages are closed under union operation : To prove this, we need to show that a finite automaton can recognize the union of two regular languages
+We achieve this by constructing a new finite automaton that runs both M1 and M2 in parallel on the input and accepts if either one is in an accepting state.
+
+Machines can be combined to track pairs of states for the union language : Machines M1 and M2 are combined by feeding their symbols into M
+Remember pairs of states from M1 and M2 to track M1 and M2 simultaneously
+
+Simulating M1 first then shifting to M2 to identify string division does not work : Might fail when M2 cannot accept the rest of the string
+Optimal place to split string is unknown because it depends on y

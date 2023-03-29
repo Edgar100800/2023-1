@@ -1,0 +1,11 @@
+Un automata es capas de procesar informacion y realizar computo, este esta compuesto por por un conjunto de estados finitos.
+Este recibe como entradas simbolos y una funcion de transicion que describe como el automata cambia de estado dependiendo de que simbolo este leyendo en la entrada.
+
+Existen 4 tipos de automatas
+    - Automata finito determinista
+    - Automata finito no determinista
+    - Automata con pila
+    - Maquina de turing
+cada automata se puede utilizar en base a los requerimientos y el tipo de lenguaje con el que se busca resolver un problema.
+
+El automata va a recibir una entrada, esta entrada esta formada por ciertos simbolos, este mediante una secuencia de pasos va a determinar si la entrada es ACEPTADA o RECHAZADA, todos los casos donde la entrada nos permita ser ACEPTADOS se le va a considerar el lenguaje de nuestro automata.
