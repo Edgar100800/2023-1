@@ -1,0 +1,45 @@
+The video covers the three core cloud service models: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). IaaS allows a cloud provider to own the equipment, but outsource management and maintenance responsibilities to the customer. PaaS enables developers to build applications without assuming capital and resource costs. SaaS provides software applications to users through the cloud.
+
+Understanding Core Cloud Service Models : Infrastructure as a Service (IaaS) - the cloud customer outsources infrastructure responsibility to a provider
+Cloud provider offers a set of IT-related services to provide IT resource to consumers
+
+Outsourcing infrastructure to the cloud simplifies management : Cloud provider owns and maintains equipment for infrastructure resources
+Infrastructure components like servers, storage, networking, and virtualization are outsourced
+
+Infrastructure as a service reduces infrastructure costs : Allows for easy creation and deployment of infrastructure
+Avoids expenses related to buying new hardware and maintenance/upgrading costs
+
+Infrastructure-as-a-Service and Platform-as-a-Service offer flexibility and efficiency. : IAAS allows for quick and easy creation of development environments and hardware capacity spikes can be addressed efficiently.
+PAAS enables developers to efficiently create and manage their applications without worrying about underlying infrastructure.
+
+Developers can build applications without worrying about capital and resource costs. : The platform provides all necessary tools, programming languages, and APIs.
+PaaS customers don't need to configure or maintain an infrastructure for development.
+
+Cloud services provide faster application development and deployment : Cloud environment enables faster application deployment without worrying about the underlying infrastructure
+Software as a service (SaaS) cloud model provides customers with software application on demand over the Internet
+
+Cloud model options are IaaS, PaaS and SaaS. : IaaS (infrastructure as a service) is outsourcing of responsibility for infrastructure components.
+PaaS (platform as a service) is a cloud-based platform to develop, run and manage applications.
+
+Cloud computing offers IaaS, PaaS, and SaaS models : IaaS provides virtualized infrastructure
+PaaS provides web app development and management, SaaS provides on-demand software
+
+
+
+Se tiene userId y groupID  todos apartir del numero 1000.
+Un usuario puede pertenecer a varios grupos
+El grupo sudo es como el admin 
+Todos los usuarios pertenecientes al sudo tienen acceso al administrador
+
+su(switch user) --> para cambiar de usuario
+id --> me da mi jerarquia actual 
+exit --> cerrar la sesion del usuario
+df -h  --> recursos de mi computador
+df -u  --> espacio de nuestros archivos del directorio
+
+cp holamundo.cpp ./c++  --> copia en el directorio c++ una copia de holamundo.cpp
+mv holamundo.cpp hola.cpp  --> renombra el archivo
+mv hola.* ./c++  --> mueve los documentos que inician con "hola." al directorio c++
+rm holamundo.cpp  --> remueve el documento holamundo.cpp
+
+PARA CAMBIAR DE USUARIO ES NECESARIO SALIR ANTES.
