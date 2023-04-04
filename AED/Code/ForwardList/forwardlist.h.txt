@@ -1,0 +1,245 @@
+//
+// Created by USUARIO on 04/04/2023.
+//
+
+template <class T>
+class Node {
+public:
+    T data;
+    Node<T>* next;
+
+    Node(T newData) {
+        data = newData;
+        next = nullptr;
+    }
+};
+
+
+template <class T>
+class List {
+private:
+    Node<T>* head;
+public:
+    // Constructor y Destructor
+    List(): head(nullptr) {}
+    ~List() { clear(); }
+
+    // Métodos básicos de la lista
+    T front(); // Retorna el elemento al comienzo
+    T back(); // Retorna el elemento al final
+    void push_front(T); // Agrega un elemento al comienzo
+    void push_back(T); // Agrega un elemento al final
+    T pop_front(); // Remueve el elemento al comienzo
+    T pop_back(); // Remueve el elemento al final
+    T& operator[](int); // Retorna el elemento en la posición indicada
+    bool empty(); // Retorna si la lista está vacía o no
+    int size(); // Retorna el tamaño de la lista
+    void clear(); // Elimina todos los elementos de la lista
+
+    // Métodos avanzados de la lista
+    void sort(); // Implementa un algoritmo de ordenacion con listas enlazadas
+    void reverse(); // Revierte la lista
+    static List<T> mergeLists(List<T>& , List<T>&); // Fusiona dos listas enlazadas
+    void show(); // Muestra los elementos de la lista
+    static List<T> findCommonValues(List<T>& ,List<T>&);
+};
+
+template<class T>
+List<T> List<T>::findCommonValues(List<T>& list1, List<T>& list2) {
+    List<T> commonValues;
+
+    // Loop through list1
+    Node<T>* current = list1.head;
+    while (current != nullptr) {
+        T value = current->data;
+
+        // If the value is also in list2 and commonValues, add it to the commonValues list
+        if (list2.find(value) != -1 && commonValues.find(value) == -1) {
+            commonValues.push_back(value);
+        }
+
+        current = current->next;
+    }
+
+    return commonValues;
+}
+
+
+template <class T>
+T List<T>::front() {
+    if (head != nullptr) {
+        return head->data;
+    } else {
+        throw "Lista vacía";
+    }
+}
+
+template <class T>
+T List<T>::back() {
+    if (head != nullptr) {
+        Node<T>* current = head;
+        while (current->next != nullptr) {
+            current = current->next;
+        }
+        return current->data;
+    } else {
+        throw "Lista vacía";
+    }
+}
+
+template <class T>
+void List<T>::push_front(T value) {
+    Node<T>* newNode = new Node<T>(value);
+    newNode->next = head;
+    head = newNode;
+}
+
+template <class T>
+void List<T>::push_back(T value) {
+    Node<T>* newNode = new Node<T>(value);
+    if (head == nullptr) {
+        head = newNode;
+    } else {
+        Node<T>* current = head;
+        while (current->next != nullptr) {
+            current = current->next;
+        }
+        current->next = newNode;
+    }
+}
+
+template <class T>
+T List<T>::pop_front() {
+    if (head != nullptr) {
+        Node<T>* temp = head;
+        T data = head->data;
+        head = head->next;
+        delete temp;
+        return data;
+    } else {
+        throw "Lista vacía";
+    }
+}
+
+template <class T>
+T List<T>::pop_back() {
+    if (head != nullptr) {
+        if (head->next == nullptr) {
+            T data = head->data;
+            delete head;
+            head = nullptr;
+            return data;
+        } else {
+            Node<T>* current = head;
+            while (current->next->next != nullptr) {
+                current = current->next;
+            }
+            T data = current->next->data;
+            delete current->next;
+            current->next = nullptr;
+            return data;
+        }
+    } else {
+        throw "Lista vacía";
+    }
+}
+
+template <class T>
+T& List<T>::operator[](int index) {
+    if (head != nullptr) {
+        int i = 0;
+        Node <T> *current = head;
+        while (i < index && current != nullptr) {
+            current = current->next;
+            i++;
+        }
+        if (current != nullptr) {
+            return current->data;
+        } else {
+            throw "Índice fuera de rango";
+        }
+    } else {
+        throw "Lista vacía";
+    }
+}
+
+template <class T>
+bool List<T>::empty() {
+    return head == nullptr;
+}
+
+template <class T>
+int List<T>::size() {
+    int count = 0;
+    Node<T>* current = head;
+    while (current != nullptr) {
+        count++;
+        current = current->next;
+    }
+    return count;
+}
+
+template <class T>
+void List<T>::clear() {
+    Node<T>* current = head;
+    while (current != nullptr) {
+        Node<T>* temp = current;
+        current = current->next;
+        delete temp;
+    }
+    head = nullptr;
+}
+
+template <class T>
+void List<T>::sort() {
+// Implementar un algoritmo de ordenación con listas enlazadas
+}
+
+template <class T>
+void List<T>::reverse() {
+    Node<T>* current = head;
+    Node<T>* prev = nullptr;
+    Node<T>* next = nullptr;
+    while (current != nullptr) {
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current = next;
+    }
+    head = prev;
+}
+
+template <class T>
+List<T> List<T>::mergeLists(List<T>& l1, List<T>& l2) {
+    List<T> result;
+    Node<T>* current1 = l1.head;
+    Node<T>* current2 = l2.head;
+    while (current1 != nullptr && current2 != nullptr) {
+        if (current1->data < current2->data) {
+            result.push_back(current1->data);
+            current1 = current1->next;
+        } else {
+            result.push_back(current2->data);
+            current2 = current2->next;
+        }
+    }
+    while (current1 != nullptr) {
+        result.push_back(current1->data);
+        current1 = current1->next;
+    }
+    while (current2 != nullptr) {
+        result.push_back(current2->data);
+        current2 = current2->next;
+    }
+    return result;
+}
+
+template <class T>
+void List<T>::show() {
+    Node<T>* current = head;
+    while (current != nullptr) {
+        std::cout << current->data << " ";
+        current = current->next;
+    }
+    std::cout << std::endl;
+}

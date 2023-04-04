@@ -1,0 +1,34 @@
+#include <iostream>
+#include "forwardlist.h"
+
+int main() {
+    List<int>* list1 = new List<int>();
+    List<int>* list2 = new List<int>();
+
+    // Add elements to list1
+    list1->push_back(2);
+    list1->push_back(5);
+    list1->push_back(8);
+    list1->push_back(11);
+
+    // Add elements to list2
+    list2->push_back(1);
+    list2->push_back(3);
+    list2->push_back(6);
+    list2->push_back(10);
+    list2->push_back(11);
+
+    // Merge the two lists into a new list
+    List<int> mergedList = List<int>::mergeLists(*list1, *list2);
+    // Display the merged list
+    mergedList.show();
+
+    List<int> mergedList2 = List<int>::findCommonValues(*list1, *list2);
+
+    // Clean up memory
+    delete list1;
+    delete list2;
+//    delete mergedList;
+
+    return 0;
+}
