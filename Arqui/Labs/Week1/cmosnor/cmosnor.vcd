@@ -1,0 +1,42 @@
+$date
+	Wed Apr  5 17:14:28 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module cmosnor_td $end
+$var wire 1 ! y $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$scope module cmos_nor $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 ! f $end
+$var wire 1 $ gnd $end
+$var wire 1 % vdd $end
+$var wire 1 & w_p $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1&
+1%
+0$
+0#
+0"
+1!
+$end
+#1
+0!
+1#
+#2
+0#
+z&
+1"
+#3
+1#
+#4
