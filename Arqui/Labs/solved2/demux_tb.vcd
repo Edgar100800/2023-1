@@ -1,0 +1,40 @@
+$date
+	Fri Apr 14 02:30:23 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module demux12_tb $end
+$var wire 1 ! y2_ $end
+$var wire 1 " y1_ $end
+$var reg 1 # inp_ $end
+$var reg 1 $ se_ $end
+$scope module algo $end
+$var wire 1 # inp $end
+$var wire 1 $ se $end
+$var wire 1 " y1 $end
+$var wire 1 ! y2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0$
+0#
+0"
+0!
+$end
+#1
+1$
+#2
+1"
+0$
+1#
+#3
+0"
+1!
+1$
+#13

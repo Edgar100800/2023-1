@@ -1,0 +1,26 @@
+Bucket Sort: O(n + k), where n is the number of elements to be sorted and 
+k is the number of buckets used.
+
+Insertion Sort: O(n^2) in the worst case, where n is the number of 
+elements to be sorted.
+
+Counting Sort: O(n + k), where n is the number of elements to be sorted 
+and k is the range of the input data.
+
+Selection Sort: O(n^2) in the worst case, where n is the number of 
+elements to be sorted.
+
+Radix Sort: O(d(n+k)), where d is the number of digits in the maximum 
+number, n is the number of elements to be sorted and k is the range of the 
+input data.
+
+Heap Sort: O(n log n) in the worst case, where n is the number of elements 
+to be sorted.
+
+Merge Sort: O(n log n) in the worst case, where n is the number of 
+elements to be sorted.
+
+Quick Sort: O(n log n) in the average case, but O(n^2) in the worst case.
+
+Introsort: O(n log n) in the worst case, but with a small constant factor 
+compared to Quick Sort.
