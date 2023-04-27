@@ -1,0 +1,64 @@
+$date
+	Wed Apr 26 15:23:28 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module rs_latch_behavioral_tb $end
+$var wire 1 ! qn $end
+$var wire 1 " q $end
+$var reg 1 # clk $end
+$var reg 1 $ r $end
+$var reg 1 % s $end
+$scope module rs_test $end
+$var wire 1 # clk $end
+$var wire 1 $ r $end
+$var wire 1 % s $end
+$var reg 1 " q $end
+$var reg 1 ! qn $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1%
+1$
+0#
+x"
+x!
+$end
+#1000
+z!
+z"
+1#
+#2000
+0$
+0#
+#3000
+0!
+1"
+1#
+#4000
+1$
+0#
+#5000
+z!
+z"
+1#
+#6000
+0%
+0#
+#7000
+1!
+0"
+1#
+#8000
+0$
+0#
+#9000
+1#
+#10000
+0#

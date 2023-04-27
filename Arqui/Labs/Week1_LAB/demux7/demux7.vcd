@@ -1,0 +1,50 @@
+$date
+	Wed Apr 26 18:24:52 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module demux_7_tb $end
+$var wire 8 ! out [7:0] $end
+$var reg 1 " A $end
+$var reg 3 # select [2:0] $end
+$scope module demux_test $end
+$var wire 1 " A $end
+$var wire 3 $ select [2:0] $end
+$var wire 8 % out [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bxz %
+bx $
+bx #
+x"
+bxz !
+$end
+#1000
+b1z !
+b1z %
+b1 #
+b1 $
+1"
+#2000
+b10z !
+b10z %
+b10 #
+b10 $
+#3000
+b100z !
+b100z %
+b11 #
+b11 $
+#4000
+b10000z !
+b10000z %
+b101 #
+b101 $
+#5000

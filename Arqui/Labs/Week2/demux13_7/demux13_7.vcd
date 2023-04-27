@@ -1,0 +1,35 @@
+$date
+	Thu Apr 27 16:44:37 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module demux13_7_tb $end
+$var wire 91 ! out [90:0] $end
+$var reg 13 " in [12:0] $end
+$var reg 3 # s [2:0] $end
+$scope module test1 $end
+$var wire 13 $ in [12:0] $end
+$var wire 3 % sel [2:0] $end
+$var reg 91 & out [90:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx1111110101011 &
+b0 %
+b1101010111111 $
+b0 #
+b1101010111111 "
+bx1111110101011 !
+$end
+#2
+bx1111110101011xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1111110101011 !
+bx1111110101011xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1111110101011 &
+b100 #
+b100 %
+#4

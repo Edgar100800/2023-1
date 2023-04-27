@@ -1,0 +1,51 @@
+$date
+	Thu Apr 27 17:18:59 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module gated_D_latch_tb $end
+$var wire 1 ! Qn $end
+$var wire 1 " Q $end
+$var reg 1 # D $end
+$var reg 1 $ WE $end
+$scope module test $end
+$var wire 1 # D $end
+$var wire 1 $ WE $end
+$var reg 1 " Q $end
+$var reg 1 ! Qn $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1$
+1#
+1"
+0!
+$end
+#2
+1!
+0"
+0#
+#4
+1#
+0$
+#6
+0#
+#8
+0!
+1"
+1#
+1$
+#10
+0#
+0$
+#12
+1#
+#14
+0#
+#15

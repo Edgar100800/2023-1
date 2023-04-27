@@ -1,0 +1,77 @@
+$date
+	Wed Apr 26 17:10:26 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mi_maquina_estados_tb $end
+$var wire 2 ! estado_salida [1:0] $end
+$var reg 1 " bit $end
+$var reg 1 # clk $end
+$scope module test1 $end
+$var wire 1 " bit $end
+$var wire 1 # clk $end
+$var reg 2 $ estado_salida [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx $
+0#
+1"
+bx !
+$end
+#1000
+b0 !
+b0 $
+1#
+#2000
+0#
+#3000
+b1 !
+b1 $
+1#
+#4000
+0"
+0#
+#5000
+b0 !
+b0 $
+1#
+#6000
+1"
+0#
+#7000
+b1 !
+b1 $
+1#
+#8000
+0#
+#9000
+b10 !
+b10 $
+1#
+#10000
+0#
+#11000
+b11 !
+b11 $
+1#
+#12000
+0#
+#13000
+b0 !
+b0 $
+1#
+#14000
+0#
+#15000
+b1 !
+b1 $
+1#
+#16000
+0#
