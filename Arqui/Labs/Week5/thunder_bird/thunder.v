@@ -1,6 +1,7 @@
-module m_e(clk, direction, estado_salida);
+module m_e(clk,reset, direction, estado_salida);
 
     input clk;
+    input reset;
     input [1:0]direction;
     output reg [5:0]estado_salida;
 
@@ -14,6 +15,10 @@ module m_e(clk, direction, estado_salida);
     ESTADO_5 = 6'b011_000,
     ESTADO_6 = 6'b111_000;
 
+
+    always @ (negedge reset) begin
+        estado_salida <= ESTADO_0;
+    end
 
     always @ (posedge clk) begin
 
@@ -55,7 +60,8 @@ module m_e(clk, direction, estado_salida);
 
         default: estado_salida <= ESTADO_0;
     endcase
-        
+    
+
     end
 
 endmodule

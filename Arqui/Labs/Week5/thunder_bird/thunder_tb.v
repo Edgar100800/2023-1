@@ -3,10 +3,11 @@ module ME_tb;
 
 
     reg clk;
+    reg reset;
     reg [1:0]direction;
     wire [5:0]estado_salida;
 
-    m_e test1(.clk(clk),.direction(direction),.estado_salida(estado_salida));
+    m_e test1(.clk(clk),.reset(reset),.direction(direction),.estado_salida(estado_salida));
 
     initial begin
         clk = 0;
@@ -30,10 +31,11 @@ module ME_tb;
         $display ("direction=%b, e_salida=%b",direction,estado_salida);
         #1
         // direction = 2'b01;
+        reset = 1'b1;
         #1
         $display ("direction=%b, e_salida=%b",direction,estado_salida);
         #1
-
+        reset = 1'b0;
         #1
         $display ("direction=%b, e_salida=%b",direction,estado_salida);
         #1
