@@ -1,0 +1,63 @@
+$date
+	Tue May  9 19:44:29 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module counter1_100_tb $end
+$var wire 7 ! count [6:0] $end
+$var reg 1 " btn_down $end
+$var reg 1 # btn_up $end
+$var reg 1 $ clk $end
+$var reg 1 % rst $end
+$scope module test1 $end
+$var wire 1 " btn_down $end
+$var wire 1 # btn_up $end
+$var wire 1 $ clk $end
+$var wire 1 % rst $end
+$var reg 7 & count [6:0] $end
+$var reg 7 ' state [6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 '
+b1 &
+x%
+0$
+1#
+0"
+b1 !
+$end
+#1
+b10 !
+b10 &
+b10 '
+1$
+#2
+0$
+#3
+b11 !
+b11 &
+b11 '
+1$
+#4
+0$
+#5
+b1 !
+b1 &
+b1 '
+1$
+#6
+0$
+#7
+b10 !
+b10 &
+b10 '
+1$
+#8
+0$
